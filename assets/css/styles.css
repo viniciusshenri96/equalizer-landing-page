@@ -36,6 +36,7 @@ body {
   font-family: var(--font-body);
   background: var(--color-secundary) url(../img/bg-main-desktop.png) no-repeat
     top -266px right -180px;
+  backface-visibility: hidden;
   color: var(--color-primary);
 }
 
@@ -58,7 +59,6 @@ img {
   max-width: 1110px;
   margin: 0 auto;
   padding: 0 1.5rem;
-  padding-right: 1.5rem;
 }
 .button {
   font-size: var(--font-button);
@@ -74,6 +74,11 @@ img {
 /*==================== HEADER ====================*/
 .header-logo {
   padding-top: 62px;
+  position: relative;
+}
+.header__content {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 .header__link {
   margin-bottom: 127px;
@@ -99,6 +104,12 @@ img {
   font-weight: var(--fw-regular);
 }
 
+.header__img {
+  position: absolute;
+  right: -138px;
+  top: -40px;
+  z-index: -1;
+}
 .section-bg {
   background: var(--color-primary) url(../img/bg-pattern-2.svg) no-repeat top -40px
     left 336px;
@@ -189,6 +200,61 @@ img {
 .footer__icon path:hover {
   fill: red;
 }
+
+/*==================== MEDIA QUERIES ====================*/
+@media (max-width: 1000px) {
+  .container {
+    padding-left: 33px;
+    padding-right: 39px;
+  }
+  .header__link {
+    margin-bottom: 95px;
+  }
+  .desc__content {
+    gap: 28px 0px;
+  }
+  .desc__title {
+    font-size: 4rem;
+    letter-spacing: -0.045rem;
+    max-width: 520px;
+  }
+  .desc__info {
+    font-size: 1.125rem;
+    line-height: 1.56;
+    max-width: 514px;
+  }
+  .header__img {
+    width: 267px;
+    height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header-logo {
+    padding-top: 40px;
+  }
+  .header__link {
+    margin-bottom: 64px;
+  }
+  .desc__content {
+    gap: 20px 0px;
+  }
+  .desc__title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.028rem;
+  }
+  .desc__info {
+    font-size: 1rem;
+    line-height: 1.62;
+  }
+  .header__img {
+    display: none;
+  }
+}
 /*==================== HOME ====================*/
 
 /*==================== BUTTONS ====================*/
@@ -201,16 +267,6 @@ img {
 
 /*==================== SERVICES ====================*/
 
-/* Active Modal */
-
-/*==================== PORTFOLIO ====================*/
-
-/*==================== PROJECT IN MIND ====================*/
-
-/*==================== TESTIMONIAL ====================*/
-
-/*==================== CONTACT ME ====================*/
-
 /*==================== FOOTER ====================*/
 
 /*========== SCROLL UP ==========*/
@@ -218,10 +274,3 @@ img {
 /* Show scroll */
 
 /*========== SCROLL BAR ==========*/
-
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
-
-/* For medium devices */
-
-/* For large devices */
