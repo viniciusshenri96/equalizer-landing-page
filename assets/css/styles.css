@@ -1,0 +1,227 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Colors ==========*/
+  --color-primary: #191826;
+  --color-secundary: #fcfaf9;
+  --color-bk-eq: #fa7453;
+
+  /*========== Font and typography ==========*/
+  --font-body: "IBM Plex Sans", sans-serif;
+
+  --h1-font-size: 5.5rem;
+  --h2-font-size: 2.5rem;
+  --normal-font-size: 1.25rem;
+  --font-button: 1.125rem;
+  --small-font-size: 1rem;
+  --font-price: 4.063rem;
+
+  /*========== Font weight ==========*/
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-secundary) url(../img/bg-main-desktop.png) no-repeat
+    top -266px right -180px;
+  color: var(--color-primary);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  padding-right: 1.5rem;
+}
+.button {
+  font-size: var(--font-button);
+  line-height: 1.78;
+  letter-spacing: -0.011rem;
+  font-weight: var(--fw-bold);
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  white-space: nowrap;
+  border-radius: 12px;
+}
+/*==================== HEADER ====================*/
+.header-logo {
+  padding-top: 62px;
+}
+.header__link {
+  margin-bottom: 127px;
+  display: block;
+}
+.desc {
+  margin-bottom: 321px;
+}
+.desc__content {
+  display: grid;
+  gap: 40px 0px;
+  max-width: 870px;
+}
+.desc__title {
+  font-size: var(--h1-font-size);
+  line-height: 1;
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.063rem;
+}
+.desc__info {
+  font-size: var(--normal-font-size);
+  line-height: 1.7;
+  font-weight: var(--fw-regular);
+}
+
+.section-bg {
+  background: var(--color-primary) url(../img/bg-pattern-2.svg) no-repeat top -40px
+    left 336px;
+  width: 1110px;
+  height: 600px;
+}
+.premium {
+  position: relative;
+  border-radius: 12px;
+  color: var(--color-secundary);
+  margin-bottom: 202px;
+}
+.premium__img {
+  width: 312px;
+  height: 642px;
+  position: absolute;
+  top: -212px;
+  right: 696px;
+}
+.premium__eq {
+  width: 446px;
+  height: 625px;
+  background-color: var(--color-bk-eq);
+  position: absolute;
+  top: 90px;
+  right: 95px;
+  border-radius: 12px;
+  padding: 58px 59px 48px 54px;
+}
+.premium__title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--fw-bold);
+  line-height: 1.3;
+}
+.premium__desc {
+  font-size: var(--normal-font-size);
+  font-weight: var(--fw-regular);
+  line-height: 1.7;
+  margin: 22px 0 39px;
+}
+.premium__price {
+  font-size: var(--font-price);
+  line-height: 0.8;
+  font-weight: var(--fw-bold);
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 46px;
+}
+.premium__month {
+  font-size: var(--normal-font-size);
+  line-height: 1.6;
+  font-weight: var(--fw-regular);
+}
+.premium__buttons {
+  display: grid;
+  row-gap: 16px;
+  justify-content: center;
+}
+
+.button-ios {
+  color: var(--color-secundary);
+  background-color: var(--color-primary);
+  padding: 15px 96px;
+}
+.button-android {
+  color: var(--color-primary);
+  background-color: var(--color-secundary);
+  padding: 15px 77px;
+}
+
+.footer {
+  display: flex;
+}
+.footer__contact {
+  font-size: var(--small-font-size);
+  line-height: 1.62;
+  font-weight: var(--fw-regular);
+  max-width: 366px;
+  margin: 0 360px 0 138px;
+}
+
+.footer__redes {
+  display: flex;
+  column-gap: 20px;
+}
+
+.footer__icon path:hover {
+  fill: red;
+}
+/*==================== HOME ====================*/
+
+/*==================== BUTTONS ====================*/
+
+/*==================== ABOUT ====================*/
+
+/*==================== SKILLS ====================*/
+
+/*==================== QUALIFICATION ====================*/
+
+/*==================== SERVICES ====================*/
+
+/* Active Modal */
+
+/*==================== PORTFOLIO ====================*/
+
+/*==================== PROJECT IN MIND ====================*/
+
+/*==================== TESTIMONIAL ====================*/
+
+/*==================== CONTACT ME ====================*/
+
+/*==================== FOOTER ====================*/
+
+/*========== SCROLL UP ==========*/
+
+/* Show scroll */
+
+/*========== SCROLL BAR ==========*/
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+
+/* For medium devices */
+
+/* For large devices */
