@@ -90,7 +90,7 @@ img {
   display: grid;
   grid-template-columns: 1fr auto;
 }
-.header__link:link {
+.header__link {
   margin-bottom: 127px;
   display: inline-block;
 }
@@ -200,6 +200,11 @@ img {
 .footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  justify-self: start;
+  margin-bottom: 91px;
+}
+.footer__logo.header__link {
+  margin-bottom: 0;
 }
 .footer__contact {
   font-size: var(--small-font-size);
@@ -226,6 +231,10 @@ svg path {
 
 /*==================== MEDIA QUERIES ====================*/
 @media (max-width: 1000px) {
+  body {
+    background: var(--color-secundary) url(../img/bg-main-tablet.png) no-repeat
+      top -220px right -140px;
+  }
   .container {
     margin-left: 33px;
     margin-right: 39px;
@@ -313,6 +322,10 @@ svg path {
   }
 }
 @media (max-width: 600px) {
+  body {
+    background: var(--color-secundary) url(../img/bg-main-mobile.png) no-repeat
+      top -220px left 2px;
+  }
   .container {
     margin-left: 24px;
     margin-right: 24px;
@@ -384,11 +397,10 @@ svg path {
   .button-android {
     padding: 15px 59px;
   }
-
   .footer {
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 8px;
+    margin-bottom: 80px;
   }
   .footer__contact {
     margin-bottom: 64px;
