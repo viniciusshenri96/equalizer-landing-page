@@ -38,8 +38,7 @@
 body {
   font-family: var(--font-body);
   background: var(--color-secundary) url(../img/bg-main-desktop.png) no-repeat
-    top -266px right -180px;
-  backface-visibility: hidden;
+    top -256px right -160px;
   color: var(--color-primary);
 }
 
@@ -49,6 +48,7 @@ ul {
 
 a:link {
   text-decoration: none;
+  color: var(--color-primary);
 }
 
 img {
@@ -200,7 +200,7 @@ img {
 .footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
-  justify-self: start;
+  align-items: start;
   margin-bottom: 91px;
 }
 .footer__logo.header__link {
@@ -216,6 +216,7 @@ img {
 .footer__redes {
   display: flex;
   column-gap: 20px;
+  align-self: center;
 }
 .footer__link {
   color: var(--color-primary);
