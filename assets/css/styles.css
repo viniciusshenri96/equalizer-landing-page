@@ -3,8 +3,6 @@
 
 /*==================== VARIABLES CSS ====================*/
 :root {
-  --header-height: 3rem;
-
   /*========== Colors ==========*/
   --color-primary: #191826;
   --color-secundary: #fcfaf9;
@@ -38,8 +36,15 @@
 body {
   font-family: var(--font-body);
   background: var(--color-secundary) url(../img/bg-main-desktop.png) no-repeat
-    top -256px right -160px;
+    top -16rem right -10rem;
   color: var(--color-primary);
+  overflow-x: hidden;
+}
+
+@media (min-width: 91.25rem) {
+  body {
+    background-position-x: center;
+  }
 }
 
 ul {
@@ -59,31 +64,31 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 .container {
-  max-width: 1110px;
-  margin-left: 24px;
-  margin-right: 24px;
+  max-width: 69.375rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
-@media (min-width: 1160px) {
+@media (min-width: 72.5rem) {
   .container {
     margin-left: auto;
     margin-right: auto;
   }
 }
 .button {
-  font-size: var(--font-button);
-  line-height: 1.78;
-  letter-spacing: -0.011rem;
-  font-weight: var(--fw-bold);
   display: flex;
   align-items: center;
-  column-gap: 8px;
+  column-gap: 0.5rem;
+  font-size: var(--font-button);
+  font-weight: var(--fw-bold);
+  line-height: 1.78;
+  letter-spacing: -0.011rem;
   white-space: nowrap;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   transition: 0.3s ease-in-out;
 }
 /*==================== HEADER ====================*/
 .header-logo {
-  padding-top: 62px;
+  padding-top: 3.875rem;
   position: relative;
 }
 .header__content {
@@ -91,16 +96,16 @@ img {
   grid-template-columns: 1fr auto;
 }
 .header__link {
-  margin-bottom: 127px;
+  margin-bottom: 6.813rem;
   display: inline-block;
 }
 .desc {
-  margin-bottom: 321px;
+  margin-bottom: 20.063rem;
 }
 .desc__content {
   display: grid;
-  gap: 40px 0px;
-  max-width: 870px;
+  gap: 2.5rem 0;
+  max-width: 54.375rem;
 }
 .desc__title {
   font-size: var(--h1-font-size);
@@ -116,39 +121,40 @@ img {
 
 .header__img {
   position: absolute;
-  right: -138px;
-  top: -40px;
-  z-index: -1;
+  right: -10.313rem;
+  top: -2.5rem;
 }
+
 .section-bg {
-  background: var(--color-primary) url(../img/bg-pattern-2.svg) no-repeat top -40px
-    left 336px;
+  background: var(--color-primary) url(../img/bg-pattern-2.svg) no-repeat top -2.5rem
+    left 21rem;
 }
 
 .premium {
-  max-width: 1110px;
-  height: 600px;
+  max-width: 69.375rem;
+  height: 37.5rem;
   position: relative;
-  border-radius: 12px;
-  color: var(--color-secundary);
-  margin-bottom: 202px;
+  border-radius: 0.75rem;
+  background-color: var(--color-primary);
+  margin-bottom: 12.625rem;
   padding: 0;
+  color: var(--color-secundary);
 }
 .premium__img {
-  width: 312px;
-  height: 642px;
+  width: 19.5rem;
+  height: 40.125rem;
   position: absolute;
-  top: -212px;
-  left: 102px;
+  top: -13.25rem;
+  left: 6.375rem;
 }
 .premium__eq {
-  max-width: 446px;
+  max-width: 27.875rem;
   background-color: var(--color-bk-eq);
   position: absolute;
-  top: 90px;
-  right: 95px;
-  border-radius: 12px;
-  padding: 58px 59px 48px 54px;
+  top: 5.625rem;
+  right: 5.938rem;
+  border-radius: 0.75rem;
+  padding: 3.625rem 3.688rem 3rem 3.375rem;
 }
 .premium__title {
   font-size: var(--h2-font-size);
@@ -159,7 +165,7 @@ img {
   font-size: var(--normal-font-size);
   font-weight: var(--fw-regular);
   line-height: 1.7;
-  margin: 22px 0 39px;
+  margin: 1.375rem 0 2.438rem;
 }
 .premium__price {
   font-size: var(--font-price);
@@ -167,8 +173,8 @@ img {
   font-weight: var(--fw-bold);
   display: flex;
   align-items: center;
-  column-gap: 16px;
-  margin-bottom: 46px;
+  column-gap: 1rem;
+  margin-bottom: 2.875rem;
 }
 .premium__month {
   font-size: var(--normal-font-size);
@@ -177,19 +183,19 @@ img {
 }
 .premium__buttons {
   display: grid;
-  row-gap: 16px;
+  row-gap: 1rem;
   justify-content: center;
 }
 
 .button-ios {
   color: var(--color-secundary);
   background-color: var(--color-primary);
-  padding: 15px 96px;
+  padding: 0.938rem 6rem;
 }
 .button-android {
   color: var(--color-primary);
   background-color: var(--color-secundary);
-  padding: 15px 77px;
+  padding: 0.938rem 4.813rem;
 }
 .button-ios:hover {
   background-color: var(--color-hover-ios);
@@ -201,7 +207,7 @@ img {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: start;
-  margin-bottom: 91px;
+  margin-bottom: 5.688rem;
 }
 .footer__logo.header__link {
   margin-bottom: 0;
@@ -210,12 +216,12 @@ img {
   font-size: var(--small-font-size);
   line-height: 1.62;
   font-weight: var(--fw-regular);
-  max-width: 366px;
-  margin: 0 360px 0 138px;
+  max-width: 22.875rem;
+  margin: 0 22.5rem 0 8.625rem;
 }
 .footer__redes {
   display: flex;
-  column-gap: 20px;
+  column-gap: 1.25rem;
   align-self: center;
 }
 .footer__link {
@@ -231,56 +237,64 @@ svg path {
 }
 
 /*==================== MEDIA QUERIES ====================*/
-@media (max-width: 1000px) {
+@media (max-width: 75rem) {
+  html {
+    overflow-x: hidden;
+  }
   body {
     background: var(--color-secundary) url(../img/bg-main-tablet.png) no-repeat
-      top -220px right -140px;
+      top -13.75rem right -0.547rem;
+    overflow-x: hidden;
   }
   .container {
-    margin-left: 33px;
-    margin-right: 39px;
+    margin-left: 2.063rem;
+    margin-right: 2.438rem;
   }
   .header__link {
-    margin-bottom: 95px;
+    margin-bottom: 5.938rem;
   }
   .desc {
-    margin-bottom: 249px;
+    margin-bottom: 15.563rem;
   }
   .desc__content {
-    gap: 28px 0px;
+    gap: 1.75rem 0;
   }
   .desc__title {
     font-size: 4rem;
     letter-spacing: -0.045rem;
-    max-width: 520px;
+    max-width: 32.5rem;
   }
   .desc__info {
     font-size: 1.125rem;
     line-height: 1.56;
-    max-width: 514px;
+    max-width: 32.125rem;
   }
   .header__img {
-    width: 267px;
-    height: 400px;
+    width: 16.688rem;
+    height: 25rem;
+
+    right: -4rem;
+    top: -2rem;
   }
+
   .section-bg {
-    background: var(--color-primary) url(../img/bg-pattern-2.svg) no-repeat top -31px
-      left 229px;
-    background-size: 280px;
+    background: var(--color-primary) url(../img/bg-pattern-2.svg) no-repeat top -1.938rem
+      left 14.313rem;
+    background-size: 17.5rem;
   }
   .premium {
-    margin-bottom: 183px;
+    margin-bottom: 11.438rem;
   }
   .premium__img {
-    width: 270px;
-    height: 556px;
-    top: -138px;
-    left: 64px;
+    width: 16.875rem;
+    height: 34.75rem;
+    top: -8.625rem;
+    left: 4rem;
   }
   .premium__eq {
-    top: 150px;
-    right: 58px;
-    padding: 48px 49px 48px 48px;
+    top: 9.375rem;
+    right: 3.625rem;
+    padding: 3rem 3.063rem 3rem 3rem;
   }
   .premium__title {
     font-size: 2rem;
@@ -289,29 +303,29 @@ svg path {
   .premium__desc {
     font-size: 1.125rem;
     line-height: 1.56;
-    margin: 12px 0 36px;
-    max-width: 302px;
+    margin: 0.75rem 0 2.25rem;
+    max-width: 18.875rem;
   }
 
   .premium__price {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 
   .button-ios {
-    padding: 15px 77px;
+    padding: 0.938rem 4.813rem;
   }
   .button-android {
-    padding: 15px 59px;
+    padding: 0.938rem 3.688rem;
   }
 
   .footer__logo.header__link {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: start;
-    margin-bottom: 85px;
+    margin-bottom: 5.313rem;
   }
   .footer__contact {
     grid-row: 2;
@@ -322,26 +336,26 @@ svg path {
     justify-self: end;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 43.75rem) {
   body {
     background: var(--color-secundary) url(../img/bg-main-mobile.png) no-repeat
-      top -220px left 2px;
+      top -13.75rem left 0.125rem;
   }
   .container {
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
   .header-logo {
-    padding-top: 40px;
+    padding-top: 2.5rem;
   }
   .header__link {
-    margin-bottom: 64px;
+    margin-bottom: 4rem;
   }
   .desc {
-    margin-bottom: 166px;
+    margin-bottom: 10.375rem;
   }
   .desc__content {
-    gap: 20px 0px;
+    row-gap: 1.25rem;
   }
   .desc__title {
     font-size: 2.5rem;
@@ -362,70 +376,70 @@ svg path {
   .section-bg {
     background: var(--color-primary) url(../img/bg-pattern-2.svg) no-repeat top
       center;
-    background-size: 280px;
+    background-size: 17.5rem;
   }
   .premium__img {
-    width: 209px;
-    height: 430px;
-    top: -96px;
+    width: 13.063rem;
+    height: 26.875rem;
+    top: -6rem;
     left: 50%;
     transform: translate(-50%, 0);
   }
   .premium {
-    margin-bottom: 390px;
+    margin-bottom: 24.375rem;
   }
   .premium__eq {
     max-width: 100%;
-    top: 380px;
+    top: 23.75rem;
     right: 0;
     left: 0;
-    padding: 48px 37px 48px 36px;
+    padding: 3rem 2.313rem 3rem 2.25rem;
   }
   .premium__title {
     text-align: center;
   }
   .premium__desc {
-    margin: 22px auto 39px auto;
+    margin: 1.375rem auto 2.438rem auto;
   }
   .premium__price {
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 
   .button-ios {
-    padding: 15px 77px;
+    padding: 0.938rem 4.813rem;
   }
   .button-android {
-    padding: 15px 59px;
+    padding: 0.938rem 3.688rem;
   }
   .footer {
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
   }
   .footer__contact {
-    margin-bottom: 64px;
+    margin-bottom: 4rem;
   }
   .footer__redes {
     grid-row: 3;
     justify-self: start;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
   .premium__title {
     text-align: left;
   }
 
   .premium__desc {
-    margin: 22px 0 39px 0;
+    margin: 1.375rem 0 2.438rem 0;
   }
   .premium__price {
     justify-content: start;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 20rem) {
   .premium {
-    margin-bottom: 440px;
+    margin-bottom: 27.5rem;
   }
   .desc__title {
     font-size: 2rem;
@@ -433,10 +447,8 @@ svg path {
   .desc__info {
     font-size: 1rem;
   }
-  .button-ios {
-    padding: 15px 20px;
-  }
+  .button-ios,
   .button-android {
-    padding: 15px 20px;
+    padding: 0.938rem 1.25rem;
   }
 }
