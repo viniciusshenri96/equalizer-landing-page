@@ -51,7 +51,7 @@
 
 ## 💻 Sobre o projeto
 
-✔️ Skilled e-learning landing page - É uma landing-page de uma empresa fictícia que oferece cursos.
+✔️Equalizer landing page - É uma landing-page sobre equalizador de áudio.
 
 Este projeto é um desafio do site Frontend Mentor, uma única página responsiva onde pude práticar HTML e CSS.
 
@@ -76,15 +76,23 @@ Este projeto é um desafio do site Frontend Mentor, uma única página responsiv
 ### Mobile
 
 <p align="center">
-  <img alt="Skilled e-learning landing page" title="#NextLevelWeek" src="./assets/img/mobile.png">
+  <img alt="Skilled e-learning landing page" title="#NextLevelWeek" src="./readme/mobile.png">
 <!-- 
   <img alt="Skilled e-learning landing page" title="#NextLevelWeek" src="./assets/detalhes-mobile.svg" width="200px"> -->
 </p>
 
-### Web
+### Tablet
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="Skilled e-learning landing page" title="#NextLevelWeek" src="./assets/img/desktop.png">
+  <img alt="Skilled e-learning landing page" title="#NextLevelWeek" src="./readme/tablet.png">
+
+  <!-- <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px"> -->
+</p>
+
+### Desktop
+
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="Skilled e-learning landing page" title="#NextLevelWeek" src="./readme/desktop.png">
 
   <!-- <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px"> -->
 </p>
@@ -160,6 +168,10 @@ $ npm run start
 
 --- -->
 
+## 🌎 Preview Site
+
+- [GitPages](https://viniciusshenri96.github.io/equalizer-landing-page/)
+
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
@@ -169,6 +181,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **HTML**
 - **CSS**
 - **FLEXBOX**
+- **CSS GRID**
 - **METODOLOGIA BEM**
 - **MEDIA QUERIES**
 <!-- - **[Leaflet](https://react-leaflet.js.org/en/)**
@@ -263,12 +276,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <!-- <img style="border-radius: 50%;" src="./assets/img/avatar.jpg" width="100px;" alt=""/> -->
  <sub><h2 style="font-style: normal; color:">Vinícius Henrique</></sub>
  <br />
-<<<<<<< HEAD
 
-=======
 </a>
-
-> > > > > > > 20e106c7d7ea345a89f7c7d8e80ac029c46df96e
 
 <!-- [![Twitter Badge](https://img.shields.io/badge/-@tgmarinho-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/tgmarinho)](https://twitter.com/tgmarinho)  -->
 
