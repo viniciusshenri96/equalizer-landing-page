@@ -239,16 +239,6 @@ svg path {
 }
 
 /*==================== MEDIA QUERIES ====================*/
-
-@media (min-width: 1460px) {
-  body {
-    overflow-x: hidden;
-  }
-  .header__img {
-    overflow-x: hidden;
-  }
-}
-
 @media (max-width: 75rem) {
   body {
     background: var(--color-secundary) url(../img/bg-main-tablet.png) no-repeat
