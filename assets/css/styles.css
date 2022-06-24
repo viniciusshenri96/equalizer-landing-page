@@ -37,7 +37,7 @@ body {
   background: var(--color-secundary) url(../img/bg-main-desktop.png) no-repeat
     top -16rem right -10rem;
   color: var(--color-primary);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @media (min-width: 91.25rem) {
