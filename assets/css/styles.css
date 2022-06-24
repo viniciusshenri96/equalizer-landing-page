@@ -37,7 +37,7 @@ body {
   background: var(--color-secundary) url(../img/bg-main-desktop.png) no-repeat
     top -16rem right -10rem;
   color: var(--color-primary);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @media (min-width: 91.25rem) {
@@ -90,26 +90,27 @@ img {
   padding-top: 3.875rem;
   position: relative;
 }
+/* Pattern 1 */
 .header__img {
-  width: 312px;
-  height: 468px;
+  width: 19.5rem;
+  height: 29.25rem;
   background: url(../img/bg-pattern-1.svg) no-repeat;
   position: absolute;
-  right: 0px;
+  right: 0;
   top: -2.5rem;
 }
-@media (min-width: 1430px) {
+@media (min-width: 89.375rem) {
   .header__img {
     display: none;
   }
   .header-logo::after {
     content: "";
     display: block;
-    width: 312px;
-    height: 468px;
+    width: 19.5rem;
+    height: 29.25rem;
     background: url(../img/bg-pattern-1.svg) no-repeat;
     position: absolute;
-    right: -165px;
+    right: -10.313rem;
     top: -2.5rem;
   }
 }
@@ -344,13 +345,14 @@ svg path {
     justify-self: end;
   }
 }
-@media (max-width: 800px) {
+/* Pattern 1 resposive */
+@media (max-width: 50rem) {
   .header__img {
-    width: 267px;
-    height: 400px;
-    background-size: 267px 400px;
-    right: -36px;
-    top: -32px;
+    width: 16.688rem;
+    height: 25rem;
+    background-size: 16.688rem 25rem;
+    right: -2.25rem;
+    top: -2rem;
   }
 }
 @media (max-width: 43.75rem) {
