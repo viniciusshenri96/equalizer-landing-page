@@ -67,7 +67,7 @@ img {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
-@media (min-width: 72.5rem) {
+@media (min-width: 73em) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -99,7 +99,7 @@ img {
   right: 0;
   top: -2.5rem;
 }
-@media (min-width: 89.375rem) {
+@media (min-width: 89em) {
   .header__img {
     display: none;
   }
@@ -258,7 +258,7 @@ svg path {
 
 /*==================== MEDIA QUERIES ====================*/
 
-@media (max-width: 75rem) {
+@media (max-width: 75em) {
   body {
     background: var(--color-secundary) url(../img/bg-main-tablet.png) no-repeat
       top -13.75rem right -0.547rem;
@@ -346,7 +346,7 @@ svg path {
   }
 }
 /* Pattern 1 resposive */
-@media (max-width: 50rem) {
+@media (max-width: 50em) {
   .header__img {
     width: 16.688rem;
     height: 25rem;
@@ -355,7 +355,7 @@ svg path {
     top: -2rem;
   }
 }
-@media (max-width: 43.75rem) {
+@media (max-width: 44em) {
   body {
     background: var(--color-secundary) url(../img/bg-main-mobile.png) no-repeat
       top -13.75rem left 0.125rem;
@@ -444,7 +444,7 @@ svg path {
     justify-self: start;
   }
 }
-@media (max-width: 25rem) {
+@media (max-width: 25em) {
   .premium__title {
     text-align: left;
   }
@@ -456,7 +456,7 @@ svg path {
     justify-content: start;
   }
 }
-@media (max-width: 20rem) {
+@media (max-width: 20em) {
   .premium {
     margin-bottom: 27.5rem;
   }
